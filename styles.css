@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0; /* Set your desired background color */
+  min-height: 100vh; /* Set the height of the body to fill the viewport */
+  justify-content: space-between;
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5d4a1f;
+}
+
+.goldDiv {
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+  height: 50px; /* Set the height of the gold div */
+  flex: 0 0 auto; /* Prevent gold divs from growing or shrinking */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#title {
+  font-size: 30px;
+}
+.poem-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#poem {
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 40%;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+#loading {
+  display: none; /* Hide the loading logo by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+}
